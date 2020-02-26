@@ -12,7 +12,7 @@ function displaySongInfo(item1,item2,item3){
     item1.forEach(function(newItem){
         $(item3).append("<div>" + newItem + "</div>")
     })
-}
+};
 
 $("#add").click(function(){
     empty();
@@ -22,7 +22,8 @@ $("#add").click(function(){
     displaySongInfo(songLength,"#length","#lengths");
     displaySongInfo(songLink,"#link","#links");
 
-})
+});
+
 function empty(){
   $("#songs").empty();
   $("#images").empty();
